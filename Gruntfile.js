@@ -32,11 +32,11 @@ module.exports = function(grunt) {
             spawn: false,
         },
       } 
-    }
+    },
     
     jshint: {
       all: ['js/*.js']
-    }
+    },
 
 
 
@@ -48,6 +48,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task(s).
-  
+   
   grunt.registerTask('default', ['sass', 'imagemin', 'watch', 'jshint']);
 };
