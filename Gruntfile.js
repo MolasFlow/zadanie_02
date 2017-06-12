@@ -23,6 +23,10 @@ module.exports = function(grunt) {
   			}]
   		}
   	},
+
+    jshint: {
+      all: ['js/*.js']
+    },
     
     watch: {
     scripts: {
@@ -32,10 +36,6 @@ module.exports = function(grunt) {
             spawn: false,
         },
       } 
-    },
-    
-    jshint: {
-      all: ['js/*.js']
     },
 
 
@@ -49,5 +49,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
    
-  grunt.registerTask('default', ['sass', 'imagemin', 'watch', 'jshint']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'jshint', 'watch']);
 };
