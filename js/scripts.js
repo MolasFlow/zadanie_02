@@ -2,7 +2,7 @@
 // Below is the command that makeing the test of JavaScripts working
 var variable = 'test';
 
-console.log(variable); // I don't actually understant how it works
+console.log(variable); // ok i understand now
 
 
 var name = prompt('Enter your name');
@@ -13,8 +13,23 @@ console.log('Hello, ' + name);
   and there is an example of block comment
 */
 
-var a = 12,
+var c = 12,
 	h = 8,
-	triangleArea = a * h / 2;
+	triangleArea = c * h / 2;
 
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+console.log('Triangle field with base a: ' + c + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+
+var a = prompt('Enter the value of a'),
+	b = prompt('Enter the value of b'),
+	value = (a * a) + (2 * a * b) - (b * b);
+
+console.log('The result of this task is equal: ' + value);
+
+var x = value;
+if (x > 0)	{
+	console.log('wynik dodatni')
+} else if (x < 0) {
+	console.log('wynik ujemny')
+} else  if (x == 0){
+	console.log('wynik jest równy zero')
+}
