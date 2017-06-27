@@ -13,23 +13,26 @@ console.log('Hello, ' + name);
   and there is an example of block comment
 */
 
-var c = 12,
-	h = 8,
-	triangleArea = c * h / 2;
-
-console.log('Triangle field with base a: ' + c + ' and height h: ' + h + ' is equal to: ' + triangleArea);
-
-var a = prompt('Enter the value of a'),
-	b = prompt('Enter the value of b'),
-	value = (a * a) + (2 * a * b) - (b * b);
-
-console.log('The result of this task is equal: ' + value);
-
-var x = value;
-if (x > 0)	{
-	console.log('wynik dodatni')
-} else if (x < 0) {
-	console.log('wynik ujemny')
-} else  if (x == 0){
-	console.log('wynik jest równy zero')
+function getTriangleArea(a, h) {
+	if (a <= 0) {
+		console.log('Nieprawidłowe dane')
+	} else if (h <= 0) {
+		console.log('Nieprawidłowe dane')
+	} else {
+	return (a * h / 2)
+	}
 }
+
+console.log( getTriangleArea(10,6) )
+
+var triangle1Area = getTriangleArea(10, 15);
+
+console.log( triangle1Area )
+
+var triangle2Area = getTriangleArea( - 3, 15);
+
+console.log( triangle2Area )
+
+var triangle3Area = getTriangleArea(2, 0);
+
+console.log( triangle3Area )
