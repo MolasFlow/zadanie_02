@@ -8,11 +8,11 @@ console.log(variable); // ok i understand now
 var name = prompt('Enter your name');
 alert('Hello, ' + name);
 console.log('Hello, ' + name);   
-*/
 
-/*
+
+
   and there is an example of block comment
-*/
+
 
 function getTriangleArea(a, h) {
 	if (a <= 0 || h <= 0) {
@@ -36,21 +36,22 @@ var triangle3Area = getTriangleArea(2, 0);
 
 console.log(triangle3Area);
 
-/*
+*/
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 
 var allNames = femaleNames.concat(maleNames);
 
-var newName = 'Marian'
+var newName = 'Marian';
 
 if (allNames.indexOf(newName) === -1) {
-	var x = allNames.push(newName)
+	allNames.push(newName)
 } else {
 	console.log('To imie jest już dodane')
-}
+};
 
 console.log(allNames);
+/*
 
 var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
 var dinosaur = 'triceratops'
