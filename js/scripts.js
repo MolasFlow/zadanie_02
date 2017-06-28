@@ -8,17 +8,15 @@ console.log(variable); // ok i understand now
 var name = prompt('Enter your name');
 alert('Hello, ' + name);
 console.log('Hello, ' + name);   
+*/
 
-
-
-  and there is an example of block comment
 
 
 function getTriangleArea(a, h) {
 	if (a <= 0 || h <= 0) {
-		console.log('Nieprawidłowe dane')
+		console.log('Nieprawidłowe dane');
 	} else {
-		return a * h / 2
+		return a * h / 2;
 	}
 };
 
@@ -36,7 +34,7 @@ var triangle3Area = getTriangleArea(2, 0);
 
 console.log(triangle3Area);
 
-
+/*
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 
@@ -45,9 +43,9 @@ var allNames = femaleNames.concat(maleNames);
 var newName = 'Marian';
 
 if (allNames.indexOf(newName) === -1) {
-	allNames.push(newName)
+	allNames.push(newName);
 } else {
-	console.log('To imie jest już dodane')
+	console.log('To imie jest już dodane');
 };
 
 console.log(allNames);
@@ -65,7 +63,7 @@ var length = text.length;
 var partOftext = textCharsAfter.slice(0, length/2);
 
 console.log(partOftext);
-*/
+
 
 function drawTree(height) {
 	for (var i = 0; i < height; i++) {
@@ -81,6 +79,11 @@ function drawTree(height) {
 }
 
 drawTree(5);
+
+*/
+
+
+
 
 
 
