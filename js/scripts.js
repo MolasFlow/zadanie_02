@@ -8,7 +8,7 @@ console.log(variable); // ok i understand now
 var name = prompt('Enter your name');
 alert('Hello, ' + name);
 console.log('Hello, ' + name);   
-*/
+
 
 
 
@@ -34,7 +34,7 @@ var triangle3Area = getTriangleArea(2, 0);
 
 console.log(triangle3Area);
 
-/*
+
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 
@@ -66,8 +66,7 @@ console.log(partOftext);
 
 
 function drawTree(height) {
-	for (var i = 0; i < height; i++) {
-		var star = '';
+	withButtonItemsClass
 		for (var j = 0; j < height - i; j++) {
 			star += ' ';
 		}
@@ -81,6 +80,42 @@ function drawTree(height) {
 drawTree(5);
 
 */
+
+var withButtonItemsClass = document.getElementsByClassName('button');
+
+console.log(withButtonItemsClass);
+
+var buttonLenght = withButtonItemsClass.length;
+
+var newElem = withButtonItemsClass;
+
+for (var b = 0; b < buttonLenght; b++) {
+	alert(newElem[b].innerText);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
