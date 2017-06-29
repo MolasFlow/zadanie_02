@@ -79,7 +79,7 @@ function drawTree(height) {
 
 drawTree(5);
 
-*/
+
 
 var withButtonItemsClass = document.getElementsByClassName('button');
 
@@ -92,8 +92,21 @@ var newElem = withButtonItemsClass;
 for (var b = 0; b < buttonLenght; b++) {
 	alert(newElem[b].innerText);
 }
+*/
 
 
+var list = document.getElementById('list');
+
+var add = document.getElementById('addElem');
+
+var itemNumber = document.getElementsByTagName('li');
+
+add.addEventListener('click', function() {
+	var element = document.createElement('li');
+	element.innerHTML = 'item ' + itemNumber.length + ' '; 
+	list.appendChild(element);
+
+});
 
 
 
